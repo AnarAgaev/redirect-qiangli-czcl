@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'PFBeauSansPro-Reg';
+  src: url('/font/PFBeauSansPro/Regular/PFBeauSansPro-Reg.eot');
+  src: url('/font/PFBeauSansPro/Regular/PFBeauSansPro-Reg.eot?#iefix') format('embedded-opentype'),
+       url('/font/PFBeauSansPro/Regular/PFBeauSansPro-Reg.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFBeauSansPro-Regular';
+  src: url('/font/PFBeauSansPro/Regular/PFBeauSansPro-Regular.svg#PFBeauSansPro-Regular') format('svg'),
+       url('/font/PFBeauSansPro/Regular/PFBeauSansPro-Regular.ttf') format('truetype'),
+       url('/font/PFBeauSansPro/Regular/PFBeauSansPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFBeauSansPro-Light';
+  src: url('/font/PFBeauSansPro/Light/PFBeauSansPro-Light.eot');
+  src: url('/font/PFBeauSansPro/Light/PFBeauSansPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('/font/PFBeauSansPro/Light/PFBeauSansPro-Light.svg#PFBeauSansPro-Light') format('svg'),
+    url('/font/PFBeauSansPro/Light/PFBeauSansPro-Light.ttf') format('truetype'),
+    url('/font/PFBeauSansPro/Light/PFBeauSansPro-Light.woff') format('woff'),
+    url('/font/PFBeauSansPro/Light/PFBeauSansPro-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

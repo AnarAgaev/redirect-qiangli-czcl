@@ -1,0 +1,217 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-family: 'PFBeauSansPro-Regular';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.plug {
+    display: block;
+    position: relative;
+    max-width: 1200px;
+    padding: 2rem 0;
+}
+
+.plug__caption {
+    margin-top: 0;
+    font-family: 'PFBeauSansPro-Light';
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    word-spacing: 0.1rem;
+    font-size: 1.3rem;
+    padding: 0 15px;
+}
+
+.plug__description {
+    font-size: 0.875rem;
+    letter-spacing: 1.2px;
+    word-spacing: 0.05rem;
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.plug__picture {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto 0;
+}
+
+.plug__timer {
+    display: inline-block;
+    position: relative;
+    width: 105px;
+    margin-top: 0.2rem;
+    height: 24px;
+    z-index: -1;
+}
+
+.plug__timer-body {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    position: absolute;
+    width: 105px;
+    margin-left: 10px;
+    left: 0;
+    top: 0;
+    -webkit-transition: top .7s;
+    -o-transition: top .7s;
+    transition: top .7s;
+}
+
+.plug__timer-item {
+    display: block;
+    opacity: 0;
+    height: 24px;
+    -webkit-transition: opacity .7s;
+    -o-transition: opacity .7s;
+    transition: opacity .7s;
+}
+
+.plug__timer-item.active {
+    opacity: 1;
+}
+
+.plug__link {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    position: relative;
+}
+
+.plug__link::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: 4px;
+    opacity: 1;
+    -webkit-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+@media (min-width: 768px) {
+    .plug__caption {
+        font-size: 1.8rem;
+    }
+
+    .plug__description {
+        font-size: 1rem;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .plug__timer {
+        margin-top: 0;
+        width: 115px;
+    }
+
+    .plug__timer-body {
+        width: 115px;
+    }
+
+    .plug__picture {
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 991px) {
+    .plug__caption {
+        font-size: 2.2rem;
+    }
+
+    .plug__description {
+        font-size: 1.1rem;
+    }
+
+    .plug__picture {
+        margin-top: 4rem;
+    }
+
+    .plug__timer {
+        width: 125px;
+    }
+
+    .plug__timer-body {
+        width: 125px;
+    }
+
+    .plug__link:hover::after {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+@media (max-height: 425px) {
+    body {
+        display: block;
+    }
+}
+
+@media (max-height: 601px) and (min-width: 768px) {
+    body {
+        display: block;
+    }
+
+    .plug {
+        margin: 0 auto;
+    }
+}
+
+@media (max-height: 845px) and (min-width: 991px) {
+    body {
+        display: block;
+    }
+
+    .plug {
+        margin: 0 auto;
+    }
+}
