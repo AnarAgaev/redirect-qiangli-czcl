@@ -8,8 +8,6 @@
 	<link rel="stylesheet" href="/css/normalize.min.css">
     <link rel="stylesheet" href="/css/font.css">
 	<link rel="stylesheet" href="/css/style.css">
-	<script src="/js/jquery-3.6.0.min.js"></script>
-	<script src="/js/script.js"></script>
 </head>
 <body>
 	<div class="plug">
@@ -31,7 +29,19 @@
                 </span>
             </span>
         </p>
-		<img class="plug__picture" src="/img/plug.jpg" alt="">
-	</div>	  
+        <picture>
+            <source media="(max-width: 576px" srcset="/img/plug-576.jpg">
+            <source media="(min-width: 577px) and (max-width: 768px)" srcset="/img/plug-768.jpg 1x, /img/plug-1536.jpg 2x">
+            <source media="(min-width: 769px) and (max-width: 991px)" srcset="/img/plug-991.jpg 1x, /img/plug-1982.jpg 2x">
+            <source media="(min-width: 992px) and (max-width: 1199px)" srcset="/img/plug-1199.jpg 1x, /img/plug-2398.jpg 2x">
+            <source media="(min-width: 1200px) and (max-width: 1365px)" srcset="/img/plug-1365.jpg 1x, /img/plug-2730.jpg 2x">
+            <source media="(min-width: 1366px) and (max-width: 1919px)" srcset="/img/plug-1919.jpg 1x, /img/plug-3838.jpg 2x">
+            <source media="(min-width: 1920px)" srcset="/img/plug-2400.jpg 1x, /img/plug-4800.jpg 2x">
+            <img class="plug__picture" src="/img/plug.jpg" alt="Переадресация на сайт ledcapital.ru">
+        </picture>		
+	</div>
+    
+    <script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/script.js"></script>
 </body>
 </html>
